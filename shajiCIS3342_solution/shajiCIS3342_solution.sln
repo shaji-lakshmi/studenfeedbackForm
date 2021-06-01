@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1231
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shajiCIS3342_solution", "shajiCIS3342_solution\shajiCIS3342_solution.csproj", "{4F4B336F-DA65-49F4-859E-37E62FBA980A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shaji_homePage", "shaji_homePage\shaji_homePage.csproj", "{A1AB246F-8633-42B7-ADAB-FC36F7DC56FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F4B336F-DA65-49F4-859E-37E62FBA980A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F4B336F-DA65-49F4-859E-37E62FBA980A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F4B336F-DA65-49F4-859E-37E62FBA980A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F4B336F-DA65-49F4-859E-37E62FBA980A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1AB246F-8633-42B7-ADAB-FC36F7DC56FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1AB246F-8633-42B7-ADAB-FC36F7DC56FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1AB246F-8633-42B7-ADAB-FC36F7DC56FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1AB246F-8633-42B7-ADAB-FC36F7DC56FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CFA756C-F154-49ED-90A0-743B28EB048A}
+	EndGlobalSection
+EndGlobal

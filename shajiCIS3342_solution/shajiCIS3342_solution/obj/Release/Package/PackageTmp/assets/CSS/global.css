@@ -1,0 +1,29 @@
+﻿body {
+    background-color: cornflowerblue;
+}
+
+.container {
+    background-color: darkslateblue;
+    
+}
+
+form h1 {
+    color: cornflowerblue;
+    text-align: center;
+    border: double 5px;
+    border-color: cornflowerblue;
+}
+form {
+    background-color: antiquewhite;
+    padding: 5%;
+}
+
+form p{
+    text-align:center;
+}
+
+.questions {
+    background-color: cornflowerblue;
+    color: antiquewhite;
+    padding:5%;
+}

@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="assets/CSS/global.css" rel="stylesheet" />
+    <script src="assets/validation.js"></script>
+    <title>CIS 3342: SFF </title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form method="post" action="survey.aspx">
+                    <label for="txtfname">First name:</label>
+                    <input type="text" id="txtfname" name="txtfname"><br><br>
+                    <label for="txtlname">Last name:</label>
+                    <input type="text" id="txtlname" name="txtlname"><br><br>
+                    <label for="txtstudentID">Student ID:</label>
+                    <input type="text" id="txtstudentID" name="txtstudentID"><br><br>
+                    <h1>Course Evaluation</h1>
+                    <br />
+                    <div class="dropdown">
+                        <select name="courseselector" id="courseselector">
+                            <option value="CIS 3342: Server-side Web Application Development">CIS 3342: Server-side Web Application Development</option>
+                            <option value="CIS 4378: Computer and Network Security">CIS 4378: Computer and Network Security</option>
+                            <option value="CIS 4296: Capstone 1">CIS 4296: Capstone 1</option>
+                            <option value="CIS 3603: User Expereince Design">CIS 3603: User Expereince Design</option>
+                        </select>
+                    </div>
+                    <br />
+                    <div class="questions">
+                        <p><strong>Q1: </strong>The lectures, tests, and assignments complemented each other.</p>
+                        <input type="radio" id="q1Sagree" name="question1" value="Strongly agree">
+                        <label for="q1Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q1agree" name="question1" value="Agree">
+                        <label for="q1agree">Agree</label><br>
+                        <input type="radio" id="q1neutral" name="question1" value="Neutral">
+                        <label for="q1neutral">Neutral</label><br>
+                        <input type="radio" id="q1disagree" name="question1" value="Disagree">
+                        <label for="q1disagree">Disagree</label><br>
+                        <input type="radio" id="q1Sdisagree" name="question1" value="Strongly disagree">
+                        <label for="q1Sdisagree">Strongly Disagree</label>
+
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q2: </strong>The instructional materials (i.e., books, readings, handouts, study guides, lab manuals, multimedia, software) increased my knowledge and skills in the subject matter.</p>
+                        <input type="radio" id="q2Sagree" name="question2" value="Strongly agree">
+                        <label for="q2Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q2agree" name="question2" value="Agree">
+                        <label for="q2agree">Agree</label><br>
+                        <input type="radio" id="q2neutral" name="question2" value="Neutral">
+                        <label for="q2neutral">Neutral</label><br>
+                        <input type="radio" id="q2disagree" name="question2" value="Disagree">
+                        <label for="q2disagree">Disagree</label><br>
+                        <input type="radio" id="q2Sdisagree" name="question2" value="Strongly disagree">
+                        <label for="q2Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q3: </strong>The course was organized in a manner that helped me understand the underlying concepts.</p>
+                        <input type="radio" id="q3Sagree" name="question3" value="Strongly agree">
+                        <label for="q3Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q3agree" name="question3" value="Agree">
+                        <label for="q3agree">Agree</label><br>
+                        <input type="radio" id="q3neutral" name="question3" value="Neutral">
+                        <label for="q3neutral">Neutral</label><br>
+                        <input type="radio" id="q3disagree" name="question3" value="Disagree">
+                        <label for="q3disagree">Disagree</label><br>
+                        <input type="radio" id="q3Sdisagree" name="question3" value="Strongly disagree">
+                        <label for="q3Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q4: </strong>The course gave me the confidence to do more advanced work in the subject</p>
+                        <input type="radio" id="q4Sagree" name="question4" value="Strongly agree">
+                        <label for="q4Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q4agree" name="question4" value="Agree">
+                        <label for="q4agree">Agree</label><br>
+                        <input type="radio" id="q4neutral" name="question4" value="Neutral">
+                        <label for="q4neutral">Neutral</label><br>
+                        <input type="radio" id="q4disagree" name="question4" value="Disagree">
+                        <label for="q4disagree">Disagree</label><br>
+                        <input type="radio" id="q4Sdisagree" name="question4" value="Strongly disagree">
+                        <label for="q4Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q5: </strong>The examinations, projects measured my knowledge of the course material</p>
+                        <input type="radio" id="q5Sagree" name="question5" value="Strongly agree">
+                        <label for="q5Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q5agree" name="question5" value="Agree">
+                        <label for="q5agree">Agree</label><br>
+                        <input type="radio" id="q5neutral" name="question5" value="Neutral">
+                        <label for="q5neutral">Neutral</label><br>
+                        <input type="radio" id="q5disagree" name="question5" value="Disagree">
+                        <label for="q5disagree">Disagree</label><br>
+                        <input type="radio" id="q5Sdisagree" name="question5" value="Strongly disagree">
+                        <label for="q5Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q6: </strong>I believe that what I’m being asked to learn in this course is important</p>
+                        <input type="radio" id="q6Sagree" name="question6" value="Strongly agree">
+                        <label for="q6Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q6agree" name="question6" value="Agree">
+                        <label for="q6agree">Agree</label><br>
+                        <input type="radio" id="q6neutral" name="question6" value="Neutral">
+                        <label for="q5neutral">Neutral</label><br>
+                        <input type="radio" id="q6disagree" name="question6" value="Disagree">
+                        <label for="q6disagree">Disagree</label><br>
+                        <input type="radio" id="q6Sdisagree" name="question6" value="Strongly disagree">
+                        <label for="q6Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q7: </strong>I would highly recommend this course to other students</p>
+                        <input type="radio" id="q7Sagree" name="question7" value="Strongly agree">
+                        <label for="q7Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q7agree" name="question7" value="Agree">
+                        <label for="q7agree">Agree</label><br>
+                        <input type="radio" id="q7neutral" name="question7" value="Neutral">
+                        <label for="q7neutral">Neutral</label><br>
+                        <input type="radio" id="q7disagree" name="question7" value="Disagree">
+                        <label for="q7disagree">Disagree</label><br>
+                        <input type="radio" id="q7Sdisagree" name="question7" value="Strongly disagree">
+                        <label for="q7Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q8: </strong>Overall, this course met my expectations for the quality of the course</p>
+                        <input type="radio" id="q8Sagree" name="question8" value="Strongly agree">
+                        <label for="q8Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q8agree" name="question8" value="Agree">
+                        <label for="q8agree">Agree</label><br>
+                        <input type="radio" id="q8neutral" name="question8" value="Neutral">
+                        <label for="q8neutral">Neutral</label><br>
+                        <input type="radio" id="q8disagree" name="question8" value="Disagree">
+                        <label for="q8disagree">Disagree</label><br>
+                        <input type="radio" id="q8Sdisagree" name="question8" value="Strongly disagree">
+                        <label for="q8Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q9: </strong>The course was helpful in progress toward my degree</p>
+                        <input type="radio" id="q9Sagree" name="question9" value="Strongly agree">
+                        <label for="q9Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q9agree" name="question9" value="Agree">
+                        <label for="q9agree">Agree</label><br>
+                        <input type="radio" id="q9neutral" name="question9" value="Neutral">
+                        <label for="q9neutral">Neutral</label><br>
+                        <input type="radio" id="q9disagree" name="question9" value="Disagree">
+                        <label for="q9disagree">Disagree</label><br>
+                        <input type="radio" id="q9Sdisagree" name="question9" value="Strongly disagree">
+                        <label for="q9Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q10: </strong>The course (or section) provided an appropriate balance between instruction and practice</p>
+                        <input type="radio" id="q10Sagree" name="question10" value="Strongly agree">
+                        <label for="q10Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q10agree" name="question10" value="Agree">
+                        <label for="q10agree">Agree</label><br>
+                        <input type="radio" id="q10neutral" name="question10" value="Neutral">
+                        <label for="q10neutral">Neutral</label><br>
+                        <input type="radio" id="q10disagree" name="question10" value="Disagree">
+                        <label for="q10disagree">Disagree</label><br>
+                        <input type="radio" id="q10Sdisagree" name="question10" value="Strongly disagree">
+                        <label for="q10Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q11: </strong>The course (or section) provided an appropriate balance between instruction and practice</p>
+                        <input type="radio" id="q11Sagree" name="question11" value="Strongly agree">
+                        <label for="q11Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q11agree" name="question11" value="Agree">
+                        <label for="q11agree">Agree</label><br>
+                        <input type="radio" id="q11neutral" name="question11" value="Neutral">
+                        <label for="q11neutral">Neutral</label><br>
+                        <input type="radio" id="q11disagree" name="question11" value="Disagree">
+                        <label for="q11disagree">Disagree</label><br>
+                        <input type="radio" id="q11Sdisagree" name="question11" value="Strongly disagree">
+                        <label for="q11Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q12: </strong>The lab complemented my understanding of the lectures</p>
+                        <input type="radio" id="q12Sagree" name="question12" value="Strongly agree">
+                        <label for="q12Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q12agree" name="question12" value="Agree">
+                        <label for="q12agree">Agree</label><br>
+                        <input type="radio" id="q12neutral" name="question12" value="Neutral">
+                        <label for="q12neutral">Neutral</label><br>
+                        <input type="radio" id="q12disagree" name="question12" value="Disagree">
+                        <label for="q12disagree">Disagree</label><br>
+                        <input type="radio" id="q12Sdisagree" name="question12" value="Strongly disagree">
+                        <label for="q12Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <h1>Instructor Evaluation</h1>
+                    <br />
+                    <div class="questions">
+                        <p><strong>Q13: </strong>The instructor effectively presented concepts and techniques</p>
+                        <input type="radio" id="q13Sagree" name="question13" value="Strongly agree">
+                        <label for="q13Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q13agree" name="question13" value="Agree">
+                        <label for="q13agree">Agree</label><br>
+                        <input type="radio" id="q13neutral" name="question13" value="Neutral">
+                        <label for="q13neutral">Neutral</label><br>
+                        <input type="radio" id="q13disagree" name="question13" value="Disagree">
+                        <label for="q13disagree">Disagree</label><br>
+                        <input type="radio" id="q13Sdisagree" name="question13" value="Strongly disagree">
+                        <label for="q13Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+
+                    <div class="questions">
+                        <p><strong>Q14: </strong>The instructor provided guidance for understanding course exercises</p>
+                        <input type="radio" id="q14Sagree" name="question14" value="Strongly agree">
+                        <label for="q14Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q14agree" name="question14" value="Agree">
+                        <label for="q14agree">Agree</label><br>
+                        <input type="radio" id="q14neutral" name="question14" value="Neutral">
+                        <label for="q14neutral">Neutral</label><br>
+                        <input type="radio" id="q14disagree" name="question14" value="Disagree">
+                        <label for="q14disagree">Disagree</label><br>
+                        <input type="radio" id="q14Sdisagree" name="question14" value="Strongly disagree">
+                        <label for="q14Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q15: </strong>The instructor was helpful when I had difficulty performing activities</p>
+                        <input type="radio" id="q15Sagree" name="question15" value="Strongly agree">
+                        <label for="q15Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q15agree" name="question15" value="Agree">
+                        <label for="q15agree">Agree</label><br>
+                        <input type="radio" id="q15neutral" name="question15" value="Neutral">
+                        <label for="q15neutral">Neutral</label><br>
+                        <input type="radio" id="q15disagree" name="question15" value="Disagree">
+                        <label for="q15disagree">Disagree</label><br>
+                        <input type="radio" id="q15Sdisagree" name="question15" value="Strongly disagree">
+                        <label for="q15Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p><strong>Q16: </strong>The instructor gave me constructive feedback</p>
+                        <input type="radio" id="q16Sagree" name="question16" value="Strongly agree">
+                        <label for="q16Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q16agree" name="question16" value="Agree">
+                        <label for="q16agree">Agree</label><br>
+                        <input type="radio" id="q16neutral" name="question16" value="Neutral">
+                        <label for="q16neutral">Neutral</label><br>
+                        <input type="radio" id="q16disagree" name="question16" value="Disagree">
+                        <label for="q16disagree">Disagree</label><br>
+                        <input type="radio" id="q16Sdisagree" name="question16" value="Strongly disagree">
+                        <label for="q16Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <div class="questions">
+                        <p>
+                            <strong>Q17: </strong>The instructor guided the discussion well
+                        </p>
+                        <input type="radio" id="q17Sagree" name="question17" value="Strongly agree">
+                        <label for="q17Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q17agree" name="question17" value="Agree">
+                        <label for="q17agree">Agree</label><br>
+                        <input type="radio" id="q17neutral" name="question17" value="Neutral">
+                        <label for="q17neutral">Neutral</label><br>
+                        <input type="radio" id="q17disagree" name="question17" value="Disagree">
+                        <label for="q17disagree">Disagree</label><br>
+                        <input type="radio" id="q17Sdisagree" name="question17" value="Stronger disagree">
+                        <label for="q17Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+
+                    <div class="questions">
+                        <p><strong>Q18: </strong>The instructor encouraged participation</p>
+                        <input type="radio" id="q18Sagree" name="question18" value="Strongly agree">
+                        <label for="q18Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q18agree" name="question18" value="Agree">
+                        <label for="q18agree">Agree</label><br>
+                        <input type="radio" id="q18neutral" name="question18" value="Neutral">
+                        <label for="q18neutral">Neutral</label><br>
+                        <input type="radio" id="q18disagree" name="question18" value="Disagree">
+                        <label for="q18disagree">Disagree</label><br>
+                        <input type="radio" id="q18Sdisagree" name="question18" value="Strongly disagree">
+                        <label for="q18Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+
+                    <div class="questions">
+                        <p><strong>Q19: </strong>The instructor gave me constructive feedback on assignments</p>
+                        <input type="radio" id="q19Sagree" name="question19" value="Strongly agree">
+                        <label for="q19Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q19agree" name="question19" value="Agree">
+                        <label for="q19agree">Agree</label><br>
+                        <input type="radio" id="q19neutral" name="question19" value="Neutral">
+                        <label for="q19neutral">Neutral</label><br>
+                        <input type="radio" id="q19disagree" name="question19" value="Disagree">
+                        <label for="q19disagree">Disagree</label><br>
+                        <input type="radio" id="q19Sdisagree" name="question19" value="Strongly disagree">
+                        <label for="q19Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+
+                    <div class="questions">
+                        <p><strong>Q20: </strong>The instructor increased my understanding of course material</p>
+                        <input type="radio" id="q20Sagree" name="question20" value="Strongly agree">
+                        <label for="q20Sagree">Strongly Agree</label><br>
+                        <input type="radio" id="q20agree" name="question20" value="Agree">
+                        <label for="q20agree">Agree</label><br>
+                        <input type="radio" id="q20neutral" name="question20" value="Neutral">
+                        <label for="q20neutral">Neutral</label><br>
+                        <input type="radio" id="q20disagree" name="question20" value="Disagree">
+                        <label for="q20disagree">Disagree</label><br>
+                        <input type="radio" id="q20Sdisagree" name="question20" value="Strongly disagree">
+                        <label for="q20Sdisagree">Strongly Disagree</label>
+                    </div>
+                    <br>
+                    <button type="submit" onclick="validateForm()" class="btn btn-secondary btn-lg btn-block">Submit</button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

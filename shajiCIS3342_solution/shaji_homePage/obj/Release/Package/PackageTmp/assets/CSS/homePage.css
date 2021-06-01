@@ -1,0 +1,23 @@
+﻿body {
+    background-color: lightsalmon;
+}
+
+#profile{
+    border: solid 20px; 
+    border-color: salmon;
+}
+
+h1{
+    padding: 10%;
+    color: whitesmoke;
+}
+
+h3{
+  
+    color: whitesmoke;
+}
+
+.row {
+
+    margin-top: 5%;
+}
